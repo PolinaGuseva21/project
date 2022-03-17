@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="../src/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -20,9 +21,9 @@
     -->
     <title>React App</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <!-- <body> -->
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <!-- <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -33,5 +34,164 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <!-- </body> -->
+
+  <body class="app">
+    <header class="header flex__between"> 
+        <section class="Logo flex__between">
+            <img src="../resources/covering/logos_spotify-icon.svg" alt="Logo" width="65" height="65"/>
+            <span class="main__txt">Home</span>
+        </section>
+         <section class="head__menu flex__between">
+            <a href="" class="tag txt">Podcasts</a>
+            <a href="" class="tag txt">Playlists</a>
+            <a href="" class="tag txt">Genres</a>
+            <a href="" class="tag txt">Performers</a>
+        </section>
+        <section class="about__user">
+            <span class="txt"><b>Polina Guseva</b></span>
+            <a href="" class="">
+                    <img class="icon__u" src="../resources/covering/user__avatar.jpg" alt="User__avatar" />
+                </a>
+        </section>
+    </header>
+    <aside class="menu flex__between">
+        <aside class="menu1">
+            <a href="" class="icon">
+                <img src="../resources/covering/user.svg" alt="User"/>
+             </a>
+            <a href="" class="icon">
+                <img src="../resources/covering/search.svg" alt="Search"/>
+            </a>
+            <a href="" class="icon">
+                <img src="../resources/covering/playlist.svg" alt="Playlists"/>
+            </a>
+            <a href="" class="icon">
+                <img src="../resources/covering/popular.svg" alt="Popular playlists"/>
+            </a>
+            <a href="" class="icon">
+                <img src="../resources/covering/like.svg" alt="Like" width="60" height="60"/>
+            </a>
+        </aside>
+        <aside class="menu2">
+            <a href="" class="icon">
+                <img src="../resources/covering/settings.svg" alt="Settings" />
+            </a>
+            <a href="" class="icon">
+                <img src="../resources/covering/help.svg" alt="Help" />
+            </a>
+        </aside>   
+    </aside>
+    <aside class="albums">
+        <section class="banner">
+            <a class="big__banner">
+                <section class="big__banner__inf">
+                    <section>
+                        <span class="main__txt txt__black"><b>Ludovico Einaudi</b></span>
+                        <span class="txt__black txt__24">Underwater</span>
+                    </section>
+                    <span class="txt txt__black">Путешествие в прошлое</span>
+                    <button class="play__button__banner"> <img alt="" src="../resources/banner/play__banner.svg" />Слушать</button>
+                </section>
+            </a>
+            <section href="" class="playlist__podcast">
+                <img src="../resources/banner/playlist_back_draw.svg" alt="" width="300" height="200"/>
+                <section class="flex__around__playlist">
+                    <section class="playlist__txt__block" >
+                        <span class="txt"><b>Плейлист дня</b></span>
+                        <span class="txt__14">Собирается для вас каждый день</span>
+                    </section>
+                    <input type="image" src="../resources/banner/button__playlist__day.svg">
+                </section>
+            </section>
+            <section href="" class="playlist__podcast">
+                <img src="../resources/banner/playlist_back_draw.svg" alt="" width="300" height="200"/>
+                <section class="flex__around__playlist">
+                    <section class="playlist__txt__block" >
+                        <span class="txt"><b>Подкасты</b></span>
+                        <span class="txt__14">О том, что вас интересует</span>
+                    </section>
+                    <input type="image" src="../resources/banner/button__playlist__day.svg">
+                </section>
+            </section>
+        </section>
+        <section class="rec__txt flex__between">
+            <span class="main__txt">Albums for you</span>
+            <a href="" class="tag txt">Show all</a>
+        </section>
+        <section class="recomendations">
+            <a href="" class="playlist__podcast">
+                <section class="playlist__for__you">
+                    <img src="../resources/playlists/coldplay.png" alt="" width="225" height="225"/>
+                    <section class="playlist__txt__block__for__you" >
+                        <span class="txt"><b>Coldplay</b></span>
+                        <span class="txt__14">A Rush Of Blood To The Head</span>
+                        <span class="txt__14">2002</span>
+                    </section>
+                </section>
+            </a>
+            <a href="" class="playlist__podcast">                
+                <section class="playlist__for__you">
+                    <img src="../resources/playlists/tim.png" alt="" width="225" height="225"/>
+                    <section class="playlist__txt__block__for__you" >
+                        <span class="txt"><b>Roedelius, Tim Story</b></span>
+                        <span class="txt__14">4 Hands</span>
+                        <span class="txt__14">2022</span>
+                    </section>
+                </section>                
+            </a>
+            <a href="" class="playlist__podcast">                
+                <section class="playlist__for__you">
+                    <img src="../resources/playlists/qouk.png" alt="" width="225" height="225"/>
+                    <section class="playlist__txt__block__for__you" >
+                        <span class="txt"><b>Quok</b></span>
+                        <span class="txt__14">Traveller</span>
+                        <span class="txt__14">2016</span>
+                    </section>
+                </section>                
+            </a>
+            <a href="" class="playlist__podcast">                
+                <section class="playlist__for__you">
+                    <img src="../resources/playlists//ila.png" alt="" width="225" height="225"/>
+                    <section class="playlist__txt__block__for__you" >
+                        <span class="txt"><b>ИЛЬЯМАЗО</b></span>
+                        <span class="txt__14">Вечером</span>
+                        <span class="txt__14">2021</span>
+                    </section>
+                </section>                
+            </a>
+            <a href="" class="playlist__podcast">                
+                <section class="playlist__for__you">
+                    <img src="../resources/playlists/noize.png" alt="" width="225" height="225"/>
+                    <section class="playlist__txt__block__for__you" >
+                        <span class="txt"><b>Noize MC</b></span>
+                        <span class="txt__14">Выход в город </span>
+                        <span class="txt__14">2021</span>
+                    </section>
+                </section>                
+            </a>
+        </section>
+    </aside>
+    <footer class="move__player"> 
+      <section class="player flex__between">
+          <section class="button__player flex__between">         
+              <input type="image" src="../resources/player/эквалайзер.svg">
+              <input type="image" src="../resources/player/дизлайк.svg">
+              <input type="image" src="../resources/player/рандом.svg">
+              <input type="image" src="../resources/player/Назад.svg">
+              <input type="image" src="../resources/player/плей.svg">
+              <input type="image" src="../resources/player/вперед.svg">
+              <input type="image" src="../resources/player/повтор.svg">
+              <input type="image" src="../resources/player/лайк.svg">
+              <input type="image" src="../resources/player/громкость.svg">
+          </section> 
+          <span class="txt">Lubomyr Melnyk — Le Miroir D'Amour</span>
+          <section class="music__line flex__between">
+              <span class="txt">1:06</span>
+              <input type="image" src="../resources/player/как_будет_выглядеть_перемотка.svg">
+              <span class="txt">3:48</span>
+          </section>
+      </section>
+    </footer>
+</body>
 </html>
