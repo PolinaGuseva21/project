@@ -3,14 +3,6 @@
     padding: 0;
 }
 
-body {
-    background: white;
-    height: 100vh;
-    width: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 .app {
     background-color: #1a1a1a;
     width: 100vw;
@@ -19,6 +11,8 @@ body {
     grid-template-columns: 175px 1fr 95px;
     grid-template-rows: 135px 1fr;
     font-family: 'Futura New', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 
